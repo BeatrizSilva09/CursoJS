@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>programa</title>
+</head>
+<body>
+
+    <h3> programa javascript </h3>
+
+
+<form name="formC" action="" method="post" > 
+Digite o nome: <input type="text" name="fNome"><p></p>
+Digite o sobrenome: <input type="text" name="fSobrenome"><p></p>
+
+<input type="button" name="btnC" value="Concatenar" onclick="concatena()"/>
+<input type="reset" name="btnCancela" value="cancelar" />
+    
+</form>
+
+<script language="javascript">
+var js_name;
+var js_sobrenome;
+var js_nomecompleto;
+
+function concatena(){
+js_name = document.formC.fNome.value;
+js_sobrenome = document.formC.fSobrenome.value;
+
+js_nomecompleto= js_name + ' ' + js_sobrenome;
+
+window.alert('Ol\u00e1' + js_nomecompleto);
+
+}
+
+
+</script>
+
+
+</body>
+</html>
